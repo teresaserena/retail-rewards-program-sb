@@ -2,6 +2,7 @@ package com.retail_rewards.sample.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -9,6 +10,7 @@ import com.retail_rewards.sample.persistence.FakePersistence;
 import com.retail_rewards.sample.service.PointCalculationService;
 
 @RestController
+@RequestMapping("/api/points")
 public class RewardCalculationController {
 	
 	PointCalculationService pointCalculationService;
